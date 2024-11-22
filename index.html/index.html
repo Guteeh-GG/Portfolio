@@ -3,85 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="style.css">
-    <title>Index</title>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#hover">Principal</a></li>
-            <li><a href="#hover">Menu2</a></li>
-            <li><a href="#hover">Menu3</a></li>
-            <li><a href="#hover">Menu4</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <div class="texto-verde">
-
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing, elit ultrices natoque suscipit porta class, orci consequat a mattis nisi. Maecenas iaculis placerat fusce per aptent mattis primis erat nibh sed, non porta sagittis tempor orci pellentesque dictumst facilisis imperdiet purus dapibus, ut mus malesuada curabitur euismod litora mauris libero praesent. Nisi tellus lobortis rutrum et primis ultrices libero, ornare ante fermentum mauris fusce.
-        </p>
-        <p>
-            Nisi cum mauris quam scelerisque laoreet donec dictum, dapibus netus lectus arcu condimentum sagittis tempor cursus, suscipit vitae quis iaculis ac sem. Varius ligula auctor rhoncus posuere aptent lobortis tortor, quam scelerisque ante montes mollis semper proin metus, porttitor a ac tempor phasellus mi. Malesuada congue odio litora per ante porttitor aptent, venenatis tristique porta dis habitant convallis sem maecenas, penatibus potenti augue morbi bibendum netus.
-        </p>
-                    
+    <div>
+        <header>
+            <h1 id="title" class="title">Formulario de inscripción</h1>
+            <p id="description">Gracias por rellenar la información para finalizar la inscripción</p>
+        </header>
     </div>
+    <form id="survey-form" class="survey-form">
+        <div>
+            <label id="name-label" for="name">Nombre
+                <input type="text" id="name" placeholder="Ingrese su nombre aquí..." required>
+            </label>
+        </div>
 
-    <div class = "listado">
-        <ul>
-            <li>Lorem ipsum dolor sit amet consectetur, adipiscing elit felis congue.</li>
-            <li>Est habitant praesent suspendisse diam, ante vestibulum etiam.</li>
-            <li>Iaculis rutrum cubilia facilisis montes nec, aptent parturient integer enim.</li>
-            <li>Orci facilisi congue blandit potenti class, tellus ligula varius pellentesque.</li>
-        </ul>
-    </div>
-        <table>
-            <tr>
-                <th>head1</th>
-                <th>head2</th>
-                <th>head3</th>
-                <th>head4</th>
-            </tr>
-            <tr>
-                <td>cell1_1</td>
-                <td>cell1_2</td>
-                <td>cell1_3</td>
-                <td>cell1_4</td>
-            </tr>
-            <tr>
-                <td>cell2_1</td>
-                <td>cell2_2</td>
-                <td>cell2_3</td>
-                <td>cell2_4</td>
-            </tr>
-            <tr>
-                <td>cell3_1</td>
-                <td>cell3_2</td>
-                <td>cell3_3</td>
-                <td>cell3_4</td>
-            </tr>
-            <tr>
-                <td>cell4_1</td>
-                <td>cell4_2</td>
-                <td>cell4_3</td>
-                <td>cell4_4</td>
-            </tr>
-            <tr>
-                <td>foot1</td>
-                <td>foot2</td>
-                <td>foot3</td>
-                <td>foot4</td>
-            </tr>
-        </table>
-    </section>
+        <div>
+            <label id="email-label" for="email">Email
+                <input type="email" id="email" placeholder="Ingrese su email aquí..." required>
+            </label>
+        </div>
 
-<div class="texto-verde">
+        <div>
+            <label id="number-label" for="edad">Edad
+                <input type="number" id="number" min="18" max="100" 
+                placeholder="Ingrese su edad aquí..." required>
+            </label>
+        </div>
 
-    <p>
-        Ut facilisis viverra dis nostra enim hendrerit, est vel feugiat suscipit interdum, commodo non quam tincidunt leo. Libero litora sociosqu suspendisse metus felis nisi torquent sagittis congue morbi urna turpis varius, mi risus class etiam est cum dignissim habitasse mus magna cursus senectus. Nec nullam nisi ridiculus sapien cum sollicitudin lobortis egestas, dui pharetra eu hac malesuada quis sed, felis velit diam torquent rutrum per rhoncus. Varius malesuada volutpat scelerisque facilisi mauris sociis egestas integer, blandit eros duis potenti condimentum erat dictumst, conubia libero convallis a facilisis non tellus.
-    </p>
-</div>
+        <div>
+            <label for="dropdown">¿Cómo nos has conocido?
+                <select id="dropdown">
+                    <option value="">(selecciona una opción)</option>
+                    <option value="1">Redes sociales</option>
+                    <option value="2">A través de un conocido</option>
+                </select>
+            </label>
+        </div>
 
+        <div>
+            <p>¿Recomendarías este curso a otras personas?</p>
+            <label>
+                <input type="radio" name="recomendacion" value="yes" required>Sí
+            </label>
+            <label>
+                <input type="radio" name="recomendacion" value="no" required>No
+            </label>
+        </div>
+
+        <div>
+            <p>¿Por qué te has decidido a estudiar HTML Responsive?</p>
+            <label>
+                <input type="checkbox" name="razon" value="conocimientos">Conocimientos
+            </label>
+            <label>
+                <input type="checkbox" name="razon" value="desafio-personal">Desafío personal
+            </label>
+            <label>
+                <input type="checkbox" name="razon" value="empresa">Emprender mi negocio
+            </label>
+        </div>
+
+        <div>
+            <label for="bio">Describe brevemente por qué te interesa HTML:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Quiero tener un perfil profesional completo..."></textarea>
+            </label>
+        </div>
+
+        <!-- Botón de envío corregido -->
+        <input id="submit" type="submit" value="Submit">
+    </form>
 </body>
 </html>
