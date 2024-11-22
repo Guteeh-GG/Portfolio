@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1 id="title" class="title">Formulario de inscripción</h1>
+            <p id="description">Gracias por rellenar la información para finalizar la inscripción</p>
+        </header>
+    </div>
+    <form id="survey-form" class="survey-form">
+        <div>
+            <label id="name-label" for="name">Nombre
+                <input type="text" id="name" placeholder="Ingrese su nombre aquí..." required>
+            </label>
+        </div>
+
+        <div>
+            <label id="email-label" for="email">Email
+                <input type="email" id="email" placeholder="Ingrese su email aquí..." required>
+            </label>
+        </div>
+
+        <div>
+            <label id="number-label" for="edad">Edad
+                <input type="number" id="number" min="18" max="100" 
+                placeholder="Ingrese su edad aquí..." required>
+            </label>
+        </div>
+
+        <div>
+            <label for="dropdown">¿Cómo nos has conocido?
+                <select id="dropdown">
+                    <option value="">(selecciona una opción)</option>
+                    <option value="1">Redes sociales</option>
+                    <option value="2">A través de un conocido</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <p>¿Recomendarías este curso a otras personas?</p>
+            <label>
+                <input type="radio" name="recomendacion" value="yes" required>Sí
+            </label>
+            <label>
+                <input type="radio" name="recomendacion" value="no" required>No
+            </label>
+        </div>
+
+        <div>
+            <p>¿Por qué te has decidido a estudiar HTML Responsive?</p>
+            <label>
+                <input type="checkbox" name="razon" value="conocimientos">Conocimientos
+            </label>
+            <label>
+                <input type="checkbox" name="razon" value="desafio-personal">Desafío personal
+            </label>
+            <label>
+                <input type="checkbox" name="razon" value="empresa">Emprender mi negocio
+            </label>
+        </div>
+
+        <div>
+            <label for="bio">Describe brevemente por qué te interesa HTML:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Quiero tener un perfil profesional completo..."></textarea>
+            </label>
+        </div>
+
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
