@@ -7,8 +7,8 @@ const projects = [
         description: "Landing page de una página web wordpress",
         image: "/public/projects/ecovida.PNG",
         tags:["Web developer", "SEO"],
-        demoURL: "#",
-        githubURL: "#",
+        demoURL: "https://github.com/Guteeh-GG",
+        githubURL: "https://github.com/Guteeh-GG",
     },
 ]
 
@@ -69,7 +69,7 @@ export const ProjectSection = () => {
                  <div className="text-center mt-12">
                     <a className="cosmic-button w-fit flex items-center mx-auto gap-2"
                     target="_blank"
-                    href="#">
+                    href="https://github.com/Guteeh-GG">
                         Mis proyectos en GitHub <ArrowRight size={16}/>
                     </a>
                  </div>

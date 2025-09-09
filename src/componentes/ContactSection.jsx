@@ -57,7 +57,8 @@ return <section id="Contact" className="py-24 px-4 postion-realtive bg-secondary
                 <div className="pt-8">
                     <h4 className="font-medium mb-4">Conecta conmigo</h4>
                     <div className="flex space-x-4 justify-center">
-                        <a href="#" target="_blank">
+                        <a href="https://www.linkedin.com/in/mario-guti%C3%A9rrez-galeote-483816175/" 
+                        target="_blank">
                             <Linkedin />
                         </a>
                     </div>
